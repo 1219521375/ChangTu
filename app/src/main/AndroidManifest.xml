@@ -41,7 +41,7 @@
         android:theme="@style/DemoTheme">
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="qKYVzpFU0wlmuCAMlNBNkD5cc4nrmGRH"/>
+            android:value="rtR4KrIi7UvqGiZboPjt9ZlicGEI85KV"/>
 
         <activity
             android:name=".Map.view.activity.SplashActivity"
