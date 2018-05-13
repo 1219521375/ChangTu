@@ -192,7 +192,9 @@ public class StartRecordActivity extends BaseActivity implements View.OnClickLis
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.menu_start_record:
-                if (mTrack == null && !isRecordEmpty()){
+                if(isRecordEmpty()){
+
+                }else if (mTrack == null){
                     createTrack();    /*创建Track*/
                 } else {
                   AlertDialog.Builder builder = new AlertDialog.Builder(this);

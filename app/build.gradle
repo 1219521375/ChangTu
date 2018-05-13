@@ -2,9 +2,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword 'pokestarkey0'
+            storeFile file('D:/AndroidProgram/MyFirstKEY.jks')
+            storePassword 'pokestar'
+        }
+    }
     compileSdkVersion 26
     buildToolsVersion '27.0.3'
-
     defaultConfig {
         applicationId "com.example.innf.newchangtu"
         minSdkVersion 21
@@ -12,6 +19,7 @@ android {
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
+        signingConfig signingConfigs.config
     }
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES.txt'
@@ -28,7 +36,13 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
     }
 }
 

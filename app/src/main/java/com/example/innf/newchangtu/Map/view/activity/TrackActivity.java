@@ -67,7 +67,7 @@ public class TrackActivity extends BaseActivity implements OnGetGeoCoderResultLi
     int gatherInterval = 3;  //位置采集周期 (s)
     int packInterval = 10;  //打包周期 (s)
     String entityName = null;  // entity标识
-    long serviceId = 124718;// 鹰眼服务ID
+    long serviceId = 200127;// 鹰眼服务ID
     int traceType = 2;  //轨迹服务类型
     private static OnStartTraceListener startTraceListener = null;  //开启轨迹服务监听器
 
